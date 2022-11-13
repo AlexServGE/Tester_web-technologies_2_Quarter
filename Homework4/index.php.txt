@@ -3,22 +3,32 @@
 
 
 $professions = [
-["date" => "May 2018 - current",
-"role" => "PDx Key account manager", 
-"description" => "Sales generation in Moscow and Central Russia (making OP); Public and private segments development; Delivering products competitive advantages to B2B customers on different levels of decision making process; Distribution partners development"],
-["date" => "May 2015 - May 2018",
-"role" => "PDx Product manager", 
-"description" => "Product strategy definition; Marketing events management; Sales force trainings; Product manufacture localisation (project management of phases 1&2)"],
-["date" => "Jan 2013 - May 2015",
-"role" => "PDx Marketing specialist", 
-"description" => "Market analysis; Marketing events organisation"],
-["date" => "Sep 2010 - Jan 2013",
-"role" => "Marketing specialist", 
-"description" => "Website management and localisation; Marketing desk research"],
-["date" => "Nov 2009 - Sep 2010",
-"role" => "Sales and marketing assistent", 
-"description" => "Product catalogue creation (promo selection; text correction; design creation; QA,RA,LE approvals; printing; presentation)"],
-];
+	[
+		"date" => "May 2018 - current",
+		"role" => "PDx Key account manager", 
+		"description" => "Sales generation in Moscow and Central Russia (making OP); Public and private segments development; Delivering products competitive advantages to B2B customers on different levels of decision making process; Distribution partners development"
+	],
+	[
+		"date" => "May 2015 - May 2018",
+		"role" => "PDx Product manager", 
+		"description" => "Product strategy definition; Marketing events management; Sales force trainings; Product manufacture localisation (project management of phases 1&2)"
+	],
+	[
+		"date" => "Jan 2013 - May 2015",
+		"role" => "PDx Marketing specialist", 
+		"description" => "Market analysis; Marketing events organisation"
+	],
+	[
+		"date" => "Sep 2010 - Jan 2013",
+		"role" => "Marketing specialist", 
+		"description" => "Website management and localisation; Marketing desk research"
+	],
+	[
+		"date" => "Nov 2009 - Sep 2010",
+		"role" => "Sales and marketing assistent", 
+		"description" => "Product catalogue creation (promo selection; text correction; design creation; QA,RA,LE approvals; printing; presentation)"
+	],
+	];
 
 $size = count($professions);
 
@@ -115,9 +125,7 @@ $size = count($professions);
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
         
-   <?php
-for($i = 0; $i<$size; $i++) {
-?>
+	  <?php for($i = 0; $i<$size; $i++) { ?>
    
         <div class="w3-container">
           <h5 class="w3-opacity"><b><?php echo $professions[$i]["role"];?></b></h5>
@@ -126,9 +134,9 @@ for($i = 0; $i<$size; $i++) {
           <hr>
         </div>
         
-        
-<?php } ?> 
+        <?php } ?> 
       
+	</div>
 
       <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Образование</h2>

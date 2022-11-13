@@ -1,16 +1,16 @@
-CREATE TABLE MYTEAMMATES(
-id MEDIUMINT NOT NULL AUTO_INCREMENT,
-name TEXT NOT NULL,
-age INTEGER NOT NULL,
-address TEXT NOT NULL,
-PRIMARY KEY (id)
+CREATE TABLE myteammates(
+	id INT NOT NULL AUTO_INCREMENT,
+	name TEXT NOT NULL,
+	age INTEGER NOT NULL,
+	address TEXT NOT NULL,
+	PRIMARY KEY (id)
 );
 
-INSERT INTO MYTEAMMATES (name,age,address) VALUES
+INSERT INTO myteammates (name,age,address) VALUES
 ("Катя", 50, "Томск"), 
 ("Саша", 21, "Москва"),
 ("Егор", 22, "Клин"),
 ("Вася", 20, "Москва"),
 ("Аня", 10, "Тверь");
 
-SELECT name FROM MYTEAMMATES WHERE age >= 18 and age <30 and address = "Москва";
+SELECT name FROM myteammates WHERE age >= 18 AND age <30 AND address = "Москва";
